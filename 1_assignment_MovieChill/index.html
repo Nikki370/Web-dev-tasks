@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieChill - Find Your Entertainment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20230609/ourmid/pngtree-abstract-letter-m-logo-png-image_7124105.png">
+
+  </head>
+  <body>
+    <nav class="nav-head">
+      <div class="header">
+        <div class="logo">MovieChill</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <div class="scrollSection">
+          <a href="#home">Home</a>
+          <a href="#trending">Movies</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#footer">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="hero" >
+      <div class="left-hero">
+        <h2>Movie Freaker</h2>
+        <p>Click here to discover latest movie!</p>
+        <a href="#trending" class="hero-btn">Trending Movies 🎬</a>
+      </div>
+
+      <div class="right-hero">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xml:space="preserve"
+          id="woman-checking-phone"
+          x="0"
+          y="0"
+          style="enable-background: new 0 0 167.4 518.2"
+          version="1.1"
+          viewBox="0 0 167.4 518.2"
+          width="120px"
+        >
+          <path
+            d="m57.4 480.2-13.2 3s-3.2 10.4-4.7 16c-.1.3-.4 1.3-.6 1.9-.2 1-.3 1.9-.3 2.9.3 5 2.2 9.3 6.6 11.5 4.9 2.5 8.7 4.8 13.9 0s6.1-7.8 3.9-16.1-5.6-19.1-5.6-19.2M134 497.5c-8.9-2.8-12.7-13.8-12.7-13.8l-17.9-.9s-.4 11.2-.9 17.3c-.6 8.1.9 11.7 6.3 11.2 7.2-.6 36.6 2 41.2-.9 6.2-3.7-7.6-10.3-16-12.9"
+            style="fill: #4b44be"
+          ></path>
+          <linearGradient
+            id="SVGID_1_"
+            x1="20.472"
+            x2="130.5"
+            y1="163.75"
+            y2="163.75"
+            gradientTransform="matrix(1 0 0 -1 0 520)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" style="stop-color: #4f68ca"></stop>
+            <stop offset="1" style="stop-color: #5aceed"></stop>
+          </linearGradient>
+          <path
+            d="M29.8 227.8s-6.7 9.2-8.8 34 2.6 71.9 4.8 81S36.8 437 39 443.2s5.2 40.1 5.2 40.1l14.2.4s4.2-44.2 4.2-55.9 5.9-122.4 5.5-130.5 1.5-5.5 1.5-5.5S82 331.4 85.7 338 96 357.5 96 357.5s1.5 41.5 3.3 65.5 3.7 61.8 3.7 61.8l19.1-.4s4.4-63.2 4.4-76.5 4-45.2 4-48.9-12.4-68.3-12.4-68.3l-8.7-63-79.6.1z"
+            style="fill: url(#SVGID_1_)" 
+          ></path>
+          <linearGradient
+            id="SVGID_2_"
+            x1="33.8"
+            x2="148.412"
+            y1="138.126"
+            y2="138.126"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" style="stop-color: #f87b58"></stop>
+            <stop offset=".5" style="stop-color: #f8c548"></stop>
+            <stop offset="1" style="stop-color: #f89c51"></stop>
+          </linearGradient>
+          <path
+            d="M52.3 19.2c-6.5 2.4-14.8 34.7-14.8 34.7l-.1-.1-3.6 3.6 1.5 6.8 6.3 106.5 32.6-7 28.5-30.2 17.8 8.4s1.4 38.7 1.6 40.8 3.2 60.6 3.2 64.4c.1 4.1 17.5 22.5 20.4 20.5 8.6-6-5.7-17.1-9.1-19.8-2-1.6-6.3-56-6.6-62.4s9.9-22.7-7.8-44.2c-12.9-15.7-19.9-56-30.7-101.8-5.7-23.8-9.1-30.9-14.7-30.9-5.1 0-12.1 6.1-24.5 10.7"
+            style="fill: url(#SVGID_2_)" id="arm"
+          ></path>
+          <linearGradient
+            id="SVGID_3_"
+            x1="-.17"
+            x2="136.4"
+            y1="346.878"
+            y2="346.878"
+            gradientTransform="matrix(1 0 0 -1 0 520)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" style="stop-color: #e1a1ed"></stop>
+            <stop offset="1" style="stop-color: #7658f4"></stop>
+          </linearGradient>
+          <path
+            d="M46.8 109.9c-.1.3-12.4 6.1-17.7 12.6s-9.6 15.9-9.6 15.9-7.8 18.4-13.2 32c-2.9 7.3-12.4 37.2-1 38.3 10.8 1 34.7-24.4 38.4-29.2l4.1-9.2c.3-1.2-6.4-13.6-6.2-14.7.2-1.8 15.8-10.9 18.2-5.5.8 1.8 2.9 7 3.5 8.6 1.5 3.9-21.2 11.5-21.2 15 0 4.3-1.9 20.2-5 28S29.3 228 29.3 228l79.8.2s-2.7-35.5-1.6-47.3c0 0 3.4-38.7 5.4-42.5s5.4 47.8 4.9 58.4c-.4 7.4 6.3 51.8 8.2 53.4 3.1 2.4 10.4-2.4 10.4-2.4s-.3-48.7-.6-56.8.2-73.6-10.5-85.4-13.6-11.5-22.5-8.4-13.3 6.1-25.4 8.1c-7.4 1.3-15.1.3-22-2.7 1.9-6.9-2.1 4.8-1.6 1.6"
+            style="fill: url(#SVGID_3_)" id="arm"
+          ></path>
+          <linearGradient
+            id="SVGID_4_"
+            x1="19.5"
+            x2="124.316"
+            y1="441.827"
+            y2="441.827"
+            gradientTransform="matrix(1 0 0 -1 0 520)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" style="stop-color: #4b44be"></stop>
+            <stop offset="1" style="stop-color: #5bd3ef"></stop>
+          </linearGradient>
+          <path
+            d="M58.6.9S42.7 1.5 38.2 17 33 54.3 32.9 57.7c-.2 3.6 1.7 28-.3 34.8-1.8 6-6.9 17.1-10 24.8-1.2 3-2.1 6.2-2.7 9.4l-.4 2.6c.8 2.7 3.7 4.3 6.5 3.4.2-.1.4-.1.5-.2 1.6-.7 3.1-1.5 4.6-2.4 4.8-2.9 10.9-10.6 15.7-13 5.1-2.5 10.9-14.1 11.7-15s.5-3.8.6-6.6c.5-14.5-2.2-27.8-5.6-34.8S42.3 40 47.7 32.1 64.4 17.9 64.9 16s.8 7.6 6.8 11 14.4 12.5 14.4 14.5 2 8.5-3.7 19.8S72.2 87 80.1 97.8s27.8 25.8 29.2 29.2 0 18.5-.5 27 16.1-14.5 15.5-25.6 1.4-15.9-9.9-32.8-18.7-46.1-19-53.2S91.7 15.7 84.9 10C79.1 5.2 77.8.5 65.7.5c-2.4 0-4.8.2-7.1.4"
+            style="fill: url(#SVGID_4_)" id="arm"
+          ></path>
+          <g style="opacity: 7e-2; enable-background: new">
+            <defs>
+              <path
+                id="SVGID_5_"
+                d="M20.1 16.7h46v500h-46z"
+                style="opacity: 7e-2; enable-background: new"
+              ></path>
+            </defs>
+            <clipPath id="SVGID_6_">
+              <use xlink:href="#SVGID_5_" style="overflow: visible"></use>
+            </clipPath>
+            <path
+              d="M52.5 149.6c-2.4 1-4.7 2.1-6.9 3.4l-2.4 1.2s-25.4 26.5-24.3 25.1c4.9-6.1 20.1-38.5 25.2-46 5.4-7.8 8.4-4.7 14.3 16"
+              style="clip-path: url(#SVGID_6_)"
+            ></path>
+          </g>
+          <path
+            d="M51.3 483.1c.1.3.1.6.1.9.1 2.2 0 7.7-2.4 11.2-3 4.6 4.1 14.7 4.1 17.2s-3.3 4.8-5.6 4.1-11.9-6.1-8.1-17.7c1.5-4.7 2.4-8.8 3.3-11.4.5-1.3.9-2.6 1.3-3.9.1-.6.1-1.2.1-1.8-.1-.8-.1-1.7-.2-2.6-.5-4.5-19.5-144.8-20.2-150.2-.6-4.8-3.4-34.5-3.1-51.9-.2-1.5-.2-3-.1-4.4 0-.4.2-2.1.1-2.8.1-1.6.2-3.2.4-4.8-.3-1.3-.1-1.3 0-3.4s0-3.3.2-4.6c1.9-11.8 6.2-25.2 8.3-29l.6-2.1s4.8-17.8 6.4-21.1c1.4-3 5.4-18.7 5-22-.2-1.8 6.2-8.8 6.2-8.8l1.3-1.1c.6-.1 1.3 0 1.9.2 1.4.6 6.8-4.1 7.7-1.1 6.4 20.5 9 29.2-2.3 41.4s-.9 23.1-.7 31.7c.5 21.2-9.8 18.9-10.4 32.1s2.3 22.7 2.5 29.6c.5 22.7.2 27.2-1 36.1s-7.3 25.8-.5 59 5.8 36.2 5.1 55 0 26.2 0 26.2"
+            style="opacity: 7e-2"
+          ></path>
+          <path
+            d="m40.8 140.1.2-.1c.8-.4 5.5-2.8 8.8-4.1 3.7-1.5 8.2 11.1 9.3 13.6.1.2.1.2-.7.3-2.7.3-5.4.8-8 1.5-3.8.9-8.1 3.9-8.3 4s-1.3-2.3-3.5-7.9c-.5-1.3-1.6-4.7-.6-5.5l2.8-1.8z"
+            style="fill: #efefef" id="arm"
+          ></path>
+          <path
+            d="M69.5 73.2c2.4.9 5.2.3 7-1.6 3.2-3.2-1.2 7.9-.5 10.4s-6.5-8.8-6.5-8.8z"
+            style="opacity: 7e-2; enable-background: new"
+          ></path>
+          <path
+            d="M47.8 169.4s15.1-9.9 15.3-9.5c.4.9 1.7 4.5 1.7 4.5s1.2 2.3.8 3-14.7 6.8-14.7 6.8c-.6-.1-1.1-.4-1.3-.9-.7-1.2-1.3-2.5-1.8-3.9z"
+            style="fill: #efefef" id="arm"
+          ></path>
+        </svg>
+      </div>
+
+    </section>
+
+
+    <section class="trending-section">
+      <div class="trending" id="trending">
+        <h2>🎬 Trending Movies</h2>
+        <p class="subtitle">Catch the hottest movies everyone’s watching right now!</p>
+
+        <div class="movie-grid">
+
+          <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg" alt="Movie 1">
+            <div class="movie-info">
+              <h3>Inception</h3>
+              <p>A mind-bending thriller by Christopher Nolan.</p>
+            </div>
+            <span class="duration">2h 28m</span>
+
+            <div class="hover-actions">
+              <a href="https://www.netflix.com/title/70131314" target="_blank" class="watch-btn">Watch Now</a>
+              <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_.jpg" alt="Movie 2">
+            <div class="movie-info">
+              <h3>Titanic</h3>
+              <p>A timeless tale of love and loss that sailed beyond the iceberg and straight into our hearts.</p>
+            </div>
+            <span class="duration">3h 14m</span>
+
+            <div class="hover-actions">
+              <a href="https://www.netflix.com/title/70131314" target="_blank" class="watch-btn">Watch Now</a>
+              <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNlneWMr5YrhO7Q6eSKl1l9FPpCI_Eqbe5fFYw-GVhsFElLAwYn1YEfCTwzln7Igw3Zel3" alt="Movie 3">
+            <div class="movie-info">
+              <h3>Mufasa</h3>
+              <p>The story of the lion king Mufasa.</p>
+            </div>
+            <span class="duration">2h 00m</span>
+
+            <div class="hover-actions">
+              <a href="https://www.netflix.com/title/70131314" target="_blank" class="watch-btn">Watch Now</a>
+              <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTYxMjEzNjEtMmIxZS00ZGViLTllMjItOTI4Yzg0N2Y4NTMyXkEyXkFqcGc@._V1_.jpg" alt="Movie 4">
+            <div class="movie-info">
+              <h3>Shiddat</h3>
+              <p>The Most Talked-About Titles of the Week.</p>
+            </div>
+            <span class="duration">2h 26m</span>
+
+            <div class="hover-actions">
+              <a href="https://www.netflix.com/title/70131314" target="_blank" class="watch-btn">Watch Now</a>
+              <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMmRhNzk5NWItN2QxYy00ODdhLWI1MDItYjEwYWNiNjVmOTZhXkEyXkFqcGc@._V1_.jpg" alt="Movie 3">
+            <div class="movie-info">
+              <h3>Jab We Met</h3>
+              <p>Best movie, don't forget to watch.</p>
+            </div>
+            <span class="duration">2h 00m</span>
+
+            <div class="hover-actions">
+              <a href="https://www.netflix.com/title/70131314" target="_blank" class="watch-btn">Watch Now</a>
+              <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+            </div>
+          </div>
+
+          <!-- <div class="movie-card">
+            <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10543523_p_v8_as.jpg" alt="Movie 4">
+            <div class="movie-info">
+              <h3>Intersteller</h3>
+              <p>The Most Talked-About Titles of the Week.</p>
+            </div>
+            <span class="duration">2h 26m</span>
+
+            <div class="hover-actions">
+              <a href="https://www.netflix.com/title/70131314" target="_blank" class="watch-btn">Watch Now</a>
+              <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+            </div>
+          </div> -->
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="trending-section">
+      <div class="trending" >
+        <h2>🔥 Popular Shows</h2>
+        <p class="subtitle">Unmissable Series Everyone's Hooked On!</p>
+
+        <div class="movie-grid">
+          <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjg2NmM0MTEtYWY2Yy00NmFlLTllNTMtMjVkZjEwMGVlNzdjXkEyXkFqcGc@._V1_.jpg" alt="Stranger Things" class="show-image">
+            <div class="show-info">
+              <h3>Stranger Things</h3>
+              <p><strong>Genre:</strong> Sci-Fi, Thriller</p>
+              <p><strong>Seasons:</strong> 4 | <strong>Episodes:</strong> 34</p>
+              <p class="synopsis">A group of kids uncover terrifying supernatural secrets in their town.</p>
+
+              <label for="modal1" class="learn-more-btn">Learn More</label>
+              <input type="checkbox" id="modal1" class="modal-toggle">
+              <div class="modal">
+                <div class="modal-box">
+                  <label for="modal1" class="modal-close">✕</label>
+                  <h2>Stranger Things</h2>
+                  <p><strong>Genre:</strong> Sci-Fi, Thriller</p>
+                  <p><strong>Seasons:</strong> 4</p>
+                  <p><strong>Episodes:</strong> 34</p>
+                  <p><strong>Description:</strong> In Hawkins, Indiana, a young boy disappears. As friends, family, and police search for answers, they unravel a mystery involving top-secret experiments, supernatural forces, and one strange little girl.</p>
+                  <a href="https://www.netflix.com/title/80057281" target="_blank" class="watch-now-btn">Watch Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<div class="movie-card">
+  <img src="https://m.media-amazon.com/images/I/81AvZmDCU9L._AC_UF1000,1000_QL80_.jpg" alt="Breaking Bad" class="show-image">
+  
+  <div class="show-info">
+    <h3>Breaking Bad</h3>
+    <p><strong>Genre:</strong> Crime, Drama, Thriller</p>
+    <p><strong>Seasons:</strong> 5 | <strong>Episodes:</strong> 62</p>
+    <p class="synopsis">A chemistry teacher turned meth producer faces moral decay and danger.</p>
+
+    <label for="modal2" class="learn-more-btn">Learn More</label>
+    <input type="checkbox" id="modal2" class="modal-toggle" hidden>
+    
+    <div class="modal">
+      <div class="modal-box">
+        <label for="modal2" class="modal-close">✕</label>
+        <h2>Breaking Bad</h2>
+        <p><strong>Genre:</strong> Crime, Drama, Thriller</p>
+        <p><strong>Seasons:</strong> 5</p>
+        <p><strong>Episodes:</strong> 62</p>
+        <p><strong>Description:</strong> Walter White, a high school chemistry teacher, turns to manufacturing methamphetamine after a terminal cancer diagnosis, dragging his family and former student into a dangerous world of crime.</p>
+        <a href="https://www.netflix.com/title/70143836" target="_blank" class="watch-now-btn">Watch Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="movie-card">
+  <img src="https://resizing.flixster.com/ITt1FPrFePNR6FSqZrZK7BocG2U=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjEwMTMyOTMud2VicA==" alt="Money Heist" class="show-image">
+  
+  <div class="show-info">
+    <h3>Money Heist</h3>
+    <p><strong>Genre:</strong> Action, Crime, Drama</p>
+    <p><strong>Seasons:</strong> 5 | <strong>Episodes:</strong> 41</p>
+    <p class="synopsis">A criminal mastermind leads a heist on Spain's Royal Mint.</p>
+
+    <label for="modal3" class="learn-more-btn">Learn More</label>
+    <input type="checkbox" id="modal3" class="modal-toggle" hidden>
+    
+    <div class="modal">
+      <div class="modal-box">
+        <label for="modal3" class="modal-close">✕</label>
+        <h2>Money Heist</h2>
+        <p><strong>Genre:</strong> Action, Crime, Drama</p>
+        <p><strong>Seasons:</strong> 5</p>
+        <p><strong>Episodes:</strong> 41</p>
+        <p><strong>Description:</strong> A group of robbers, led by "The Professor", execute a long-prepared assault on the Royal Mint of Spain, taking hostages and manipulating the police to carry out their master plan.</p>
+        <a href="https://www.netflix.com/title/80192098" target="_blank" class="watch-now-btn">Watch Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="movie-card">
+  <img src="https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTktMDZkMy00NDU1LWIxM2UtODg5OGFiNmRhNDBjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Witcher" class="show-image">
+  
+  <div class="show-info">
+    <h3>The Witcher</h3>
+    <p><strong>Genre:</strong> Action, Adventure, Fantasy</p>
+    <p><strong>Seasons:</strong> 3 | <strong>Episodes:</strong> 24</p>
+    <p class="synopsis">A mutated monster-hunter struggles to find his place in a world where people are worse than beasts.</p>
+
+    <label for="modal4" class="learn-more-btn">Learn More</label>
+    <input type="checkbox" id="modal4" class="modal-toggle" hidden>
+    
+    <div class="modal">
+      <div class="modal-box">
+        <label for="modal4" class="modal-close">✕</label>
+        <h2>The Witcher</h2>
+        <p><strong>Genre:</strong> Action, Adventure, Fantasy</p>
+        <p><strong>Seasons:</strong> 3</p>
+        <p><strong>Episodes:</strong> 24</p>
+        <p><strong>Description:</strong> Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts. Based on the popular book series and games.</p>
+        <a href="https://www.netflix.com/title/80189685" target="_blank" class="watch-now-btn">Watch Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+
+    <section class="trending-section" id="reviews">
+      <div class="trending">
+        
+        <div class="review">
+          <h2>💬 User Reviews</h2>
+          <p class="subtitle">What our viewers are saying</p>
+          <div class="movie-grid">
+            <div class="review-card">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 1">
+                  <h3>Alice Johnson</h3>
+                  <p>"Absolutely loved the shows! This platform is my new go-to."</p>
+            </div>
+
+            <div class="review-card">
+              <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="User 2">
+              <h3>Rahul Verma</h3>
+              <p>"Great recommendations and seamless experience. Keep it up!"</p>
+            </div>
+
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User 3">
+          <h3>Megha Kapoor</h3>
+          <p>"UI is clean, and I love how easy it is to find trending shows."</p>
+        </div>
+
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User 4">
+          <h3>Arjun Mishra</h3>
+          <p>"Loved the content layout. It's super intuitive and user-friendly."</p>
+        </div>
+
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="User 5">
+          <h3>Neha Sharma</h3>
+          <p>"I come here daily to find something new to binge. Absolutely worth it!"</p>
+        </div>
+
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="User 6">
+          <h3>Ravi Singh</h3>
+          <p>"Perfect site for discovering top-rated shows quickly. Five stars!"</p>
+        </div>
+
+      </div>
+        </div>
+  
+      </div>
+
+          <div class="review-form">
+            <h3>Leave Your Review</h3>
+            <form>
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+              <textarea placeholder="Write your review here..." rows="4" required></textarea>
+              <button type="submit">Submit Review</button>
+            </form>
+          </div>
+
+      </div>
+    </section>
+
+    
+
+    <footer class="site-footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://google.com/terms" target="_blank">Terms & Conditions</a>
+          <a href="https://google.com/privacy" target="_blank">Privacy Policy</a>
+        </div>
+        <p>&copy; 2025 MovieChill by Nikita Kumari. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
